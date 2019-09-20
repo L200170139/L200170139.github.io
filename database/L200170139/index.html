@@ -1,76 +1,80 @@
-<html>
-    <head>
-    <title> Tugas L200170139 </title></head>
-        <body background="gambar.jpg">
-            <p align ='center'><marquee loop="3"><h1> SISTEM MANAJEMEN DATABASE</h1></marquee></p>
-            <p><h3>Perintah DDL</h3></p>
-            <table border="1" style="background-color: rgb(243, 211, 216)">
-                <tr>
-                    <td>No.</td>
-                    <td>Perintah</td>
-                    <td>Penjelasan</td>
-                    <td>Sintaks</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CREATE</td>
-                    <td>Membuat database baru</td>
-                    <td>CREATE DATABASE nama_database;</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>DROP</td>
-                    <td>Menghapus database</td>
-                    <td>DROP DATABASE nama_database;</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>RENAME</td>
-                    <td>Mengubah nama tabel</td>
-                    <td>RENAME TABLE Buku To Bukuku;</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>ALTER</td>
-                    <td>Mengubah struktur tabel yang telah dibuat</td>
-                    <td>ALTER TABLE table_name ADD column_name datatype;</td>
-                </tr>
-            </table>
-            <br>
-            <p><h3>Perintah DML</h3></p>
-            <table border="1" style="background-color: rgb(156, 211, 233)">
-                <tr>
-                    <td>No.</td>
-                    <td>Perintah</td>
-                    <td>Penjelasan</td>
-                    <td>Sintaks</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>UPDATE</td>
-                    <td>Memperbarui Data</td>
-                    <td>UPDATE nama_tabel</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>INSERT</td>
-                    <td>Menyisipkan data</td>
-                    <td>INSERT into nama_tabel values (‘value1’, ‘value2’,’ …’)</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>SELECT</td>
-                    <td>Mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi</td>
-                    <td>SELECT nama_kolom from nama tabel</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>DELETE</td>
-                    <td>Menghapus data dari tabel</td>
-                    <td>DELETE nama_kolom FROM nama tabel where kondisi.</td>
-                </tr>
-            </table>
-        </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>L200170139 Dita Denita Pramesti</title>
+	<div class="jumbotron jumbotron-fluid" >
+		<marquee>
+		<div class="container text-center">
+			<font face='goudy stout' color='white'>
+				<h1 class="display-4 ">Selamat Datang di Informatika</h1>
+				<p class="lead">Manajemen Sistem Basis Data</p>
+			</font>
+		</div>
+		</marquee>
+	</div>
+    <style>
+        body {
+                background-image: url("dita.jpg");  
+		background-size:cover;
+        }
+    </style>
+	</head>
+	<body>
     
-    
+    <br/>
+	
+    <div class="container">
+            <h2 class="text-center"><font face="goudy stout" color="#666666">Perintah SQL berdasarkan DDL dan DML dalam Server Basis Data</font></h2><br/></br></br>
+            <div class="row">
+                <div class="col text-left"><h3>"><font face="goudy stout" color="#666666">Data Definisi Language (DDL)</font></h3>
+				<p>DDL merupakan perintah SQL yang berhubungan dengan pendefinisian suatu struktur database yang digunakan untuk membuat, mengubah dan menghapus struktur dan definisi metadata dari objek-objek database.
+        Beberapa perintah dasar yang termasuk DDL ini antara lain : <br/>
+                    <div class="list">
+                            <ul>
+                                <li><b>Create</b></li></li>
+					<p align="justify">Perintah ini digunakan untuk membuat, termasuk diantaranya membuat database baru, tabel baru, view   baru, dan kolom.</p>
+                                <li><b>Alter</b></li>
+					<p align="justify">Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. 
+					Fungsinya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.</p>
+                                <li><b>Drop</b></li>
+					<p align="justify">Perintah ini digunakan untuk menghapus database dan tabel.</p>
+                                <li><b>Rename</b></li>
+					<p align="justify">Perintah yang digunakan untuk merubah nama objek</p>
+                            </ul>
+				</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-left"><h3>"><font face="goudy stout" color="#666666">Data Manipulation Language (DML)</font></h3>
+				<p>merupakan perintah SQL yang digunakan untuk proses pengolahan isi data di dalam table seperti memasukkan, merubah dan menghapus isi data. dan tidak terkait dengan perubahan struktur dan definisi tipe data dari objek database.
+          Perintah SQL yang termasuk dalam DML antara lain : <br/>
+                    <div class="list">
+                            <ul>
+                                <li><b>Select</b></li>
+					<p align="justify">Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. 
+					Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.</p>
+                                <li><b>Insert</b></li>
+					<p align="justify">Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. 
+					Penggunaannya setelah database dan tabel selesai dibuat.</p>
+                                <li><b>Update</b></li>
+					<p align="justify">Perintah ini digunakan untuk memperbaharui data lama menjadi data terkini. 
+					Jika anda memiliki data yang salah atau kurang Up To Date dengan kondisi sekarang, maka dapat diubah isi datanya dengan menggunakan perintah UPDATE.</p>
+                                <li><b>Delete</b></li>
+					<p align="justify">Perintah ini digunakan untuk menghapus data dari tabel. </p>
+                            </ul>
+                    </div>
+				</p>
+                </div>
+            </div>
+    </div>
+  </body>
 </html>
